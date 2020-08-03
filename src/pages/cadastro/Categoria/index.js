@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PageDefault from "../../../components/PageDefault";
 import FormField from "../../../components/FormField";
 import Button from "../../../components/Button";
+import useForm from "../../../hooks/useForm";
 
 export default function CadastroCategoria() {
   const valoresIniciais = {
@@ -10,32 +11,19 @@ export default function CadastroCategoria() {
     descricao: "",
     cor: "",
   };
+  const { handleChange, values, clearForm } = useForm(valoresIniciais);
   const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(valoresIniciais);
-
-  function handleChange(infosDoEvento) {
-    setValue(
-      infosDoEvento.target.getAttribute("name"),
-      infosDoEvento.target.value
-    );
-    // setNomeDaCategoria(infosDoEvento.target.value);
-  }
-  function setValue(chave, valor) {
-    setValues({
-      ...values,
-      [chave]: valor,
-    });
-  }
 
   //o primeiro parametro é o que vai acontecer quando o segundo parametro (array) for alterado
   //se o array estiver vazio [] so vai ser executado quando carregar a tela
   //se n passar o array, a funcao (primeiro parametro) vai ser executada em qualquer interação
   useEffect(() => {
-    console.log("aloooooooo");
-
-    const url = "http://localhost:8080/categorias";
+    const url = window.location.hostname.includes("localhost")
+      ? "http://localhost:8080/categorias"
+      : "https://deggauflix.herokuapp.com/categorias";
     fetch(url).then(async (respostaServer) => {
       const resposta = await respostaServer.json();
+      console.log(resposta);
       setCategorias([...resposta]);
     });
 
@@ -65,7 +53,7 @@ export default function CadastroCategoria() {
         onSubmit={function handleSubmit(infosEvento) {
           infosEvento.preventDefault();
           setCategorias([...categorias, values]);
-          setValues(valoresIniciais);
+          clearForm();
         }}
       >
         <FormField
@@ -97,7 +85,7 @@ export default function CadastroCategoria() {
       {categorias.length === 0 && <div>Loading...</div>}
       <ul>
         {categorias.map((categoria) => {
-          return <li key={`${categoria.nome}`}>{categoria.nome}</li>;
+          return <li key={`${categoria.titulo}`}>{categoria.titulo}</li>;
         })}
       </ul>
 

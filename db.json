@@ -2,15 +2,269 @@
   "categorias": [
     {
       "id": 1,
-      "nome": "Front End",
-      "descricao:": "Categoria massa",
-      "cor": "#cbd1ff"
+      "titulo": "React",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Documentação React JS",
+        "url": "https://pt-br.reactjs.org/docs/getting-started.html"
+      }
     },
     {
       "id": 2,
-      "nome": "Back End",
-      "descricao:": "Outra Categoria massa",
-      "cor": "#cbd1ff"
+      "titulo": "Node.js",
+      "cor": "#3C873A",
+      "link_extra": {
+        "text": "Documentação Node.js",
+        "url": "https://nodejs.org/en/docs/"
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "Games",
+      "cor": "orange",
+      "link_extra": {
+        "text": "Formação de Jogos na Alura",
+        "url": "https://www.alura.com.br/formacao-jogos-unity"
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "Aprendendo a aprender tecnologia",
+      "cor": "#6b5be2",
+      "link_extra": {
+        "text": "Curso sobre aprendizado na Alura",
+        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
+      }
+    },
+    {
+      "id": 5,
+      "titulo": "Musculação",
+      "cor": "#BF0404",
+      "link_extra": {
+        "text": "Playlist de musculação",
+        "url": "https://www.youtube.com/results?search_query=musculacao"
+      }
+    },
+    {
+      "id": 6,
+      "titulo": "Techno",
+      "cor": "#3a0470",
+      "link_extra": {
+        "text": "Playlist de Techno",
+        "url": "https://www.youtube.com/results?search_query=techno+playlist"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "O que é React JS? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=6IuQUgeDPg0"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Efeito Stagger com React e Styled Components | Alura e DevSoutinho",
+      "url": "https://www.youtube.com/watch?v=HGrXz6vHngI"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "Imersão React Live #01 - Analisando o front-end do Netflix, do Spotify e do Ifood",
+      "url": "https://www.youtube.com/watch?v=Dcn-tVmSxyU"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "React JS - MELHOR GUIA para Iniciantes! (2020)",
+      "url": "https://www.youtube.com/watch?v=Ws9WVHhNq5M"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "Como configurar o React Router para sua SPA | #AluraMais",
+      "url": "https://www.youtube.com/watch?v=4Tb8dp5GYqI"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "Recriando a Interface do Discord com ReactJS | UI Clone",
+      "url": "https://www.youtube.com/watch?v=x4FdZd2-_uU"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "titulo": "Fazendo um player de vídeo com React #HipstersPontoDicas - @Dev Soutinho",
+      "url": "https://www.youtube.com/watch?v=ZaYvwn9nBD4"
+    },
+    {
+      "id": 8,
+      "categoriaId": 2,
+      "titulo": "O que é Node JS? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=GKR6uSvEj8w"
+    },
+    {
+      "id": 9,
+      "categoriaId": 2,
+      "titulo": "Criando um Bot que lê os comentários do Instagram, com node js.",
+      "url": "https://www.youtube.com/watch?v=zrM7EwUXsYU"
+    },
+    {
+      "id": 10,
+      "categoriaId": 2,
+      "titulo": "SQL no Node.js com Sequelize | Masterclass #01",
+      "url": "https://www.youtube.com/watch?v=Fbu7z5dXcRs"
+    },
+    {
+      "id": 11,
+      "categoriaId": 2,
+      "titulo": "Como criar um bot no whatsapp usando NodeJS(Javascript). Um robô a sua disposição 24/7.",
+      "url": "https://www.youtube.com/watch?v=m1-CD2B01a4"
+    },
+    {
+      "id": 12,
+      "categoriaId": 2,
+      "titulo": "Node.js // Dicionário do Programador",
+      "url": "https://www.youtube.com/watch?v=vYekSMBCCiM&t=307s"
+    },
+    {
+      "id": 13,
+      "categoriaId": 3,
+      "titulo": "Final Fantasy 7",
+      "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+    },
+    {
+      "id": 14,
+      "categoriaId": 3,
+      "titulo": "Assassins Creed Valhalla",
+      "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+    },
+    {
+      "id": 15,
+      "categoriaId": 3,
+      "titulo": "God of War 4",
+      "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+    },
+    {
+      "id": 16,
+      "categoriaId": 3,
+      "titulo": "Resident Evil 8",
+      "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+    },
+    {
+      "id": 17,
+      "categoriaId": 3,
+      "titulo": "Pokémon Let's Go Pikachu/Eevee",
+      "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+    },
+    {
+      "id": 18,
+      "categoriaId": 4,
+      "titulo": "Como estudar melhor?",
+      "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+    },
+    {
+      "id": 19,
+      "categoriaId": 4,
+      "titulo": "Faculdade",
+      "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+    },
+    {
+      "id": 20,
+      "categoriaId": 4,
+      "titulo": "Frameworks",
+      "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+    },
+    {
+      "id": 21,
+      "categoriaId": 4,
+      "titulo": "A mágica do Aprendizado",
+      "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+    },
+    {
+      "id": 22,
+      "categoriaId": 4,
+      "titulo": "Como aprender a programar?",
+      "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+    },
+    {
+      "id": 23,
+      "categoriaId": 5,
+      "titulo": "ALEX DOS ANJOS E RUDEBOY ZERARAM AS MÁQUINAS DO CT",
+      "url": "https://www.youtube.com/watch?v=aiNRstNzw0Y"
+    },
+    {
+      "id": 24,
+      "categoriaId": 5,
+      "titulo": "A melhor divisão de treino de musculação",
+      "url": "https://www.youtube.com/watch?v=5EXPweYs03k"
+    },
+    {
+      "id": 25,
+      "categoriaId": 5,
+      "titulo": "QUANTAS SÉRIES E REPETIÇÕES PARA + HIPERTROFIA",
+      "url": "https://www.youtube.com/watch?v=GmGwQ_ZPBNc"
+    },
+    {
+      "id": 26,
+      "categoriaId": 5,
+      "titulo": "Fefrancopro - Treino de dorsal com Dr.Paulo Muzy",
+      "url": "https://www.youtube.com/watch?v=_nEc8WJPOK4&t=861s"
+    },
+    {
+      "id": 27,
+      "categoriaId": 5,
+      "titulo": "LÉO STRONDA, O MONSTRO VEIO AO CT !",
+      "url": "https://www.youtube.com/watch?v=rLSZRqV1Skc"
+    },
+    {
+      "id": 28,
+      "categoriaId": 6,
+      "titulo": "Fideles @ Forteresse Royale de Chinon in France for Cercle",
+      "url": "https://www.youtube.com/watch?v=CNCuGmcBqT4&t=4971s"
+    },
+    {
+      "id": 29,
+      "categoriaId": 6,
+      "titulo": "Krashkee - The Berghain Project [Techno]",
+      "url": "https://www.youtube.com/watch?v=_Pc9xFlZf_I"
+    },
+    {
+      "id": 30,
+      "categoriaId": 6,
+      "titulo": "Amelie Lens @ Atomium in Brussels, Belgium for Cercle",
+      "url": "https://www.youtube.com/watch?v=GJkuTx1DQzg&t=4s"
+    },
+    {
+      "id": 31,
+      "categoriaId": 6,
+      "titulo": "Dark Underground Techno Live Mix DJ Set 2020 (Berlin, Berghain) Mixed by JARYMANE | Mix 1",
+      "url": "https://www.youtube.com/watch?v=1GOrynyXJQ4"
+    },
+    {
+      "id": 32,
+      "categoriaId": 6,
+      "titulo": "Photon Live stream 2020 presented by Ben Klock - ARTE Concert",
+      "url": "https://www.youtube.com/watch?v=mOEr_jC-NBI"
+    },
+    {
+      "id": 33,
+      "categoriaId": 6,
+      "titulo": "Fjaak - HATE Podcast 119 (10 February 2019)",
+      "url": "https://www.youtube.com/watch?v=YN-Y027zgHE"
+    },
+    {
+      "id": 34,
+      "categoriaId": 6,
+      "titulo": "VICTOR RUIZ - LIVE SET 2019",
+      "url": "https://www.youtube.com/watch?v=qHTuXwR9J1w"
+    },
+    {
+      "id": 35,
+      "categoriaId": 6,
+      "titulo": "TALE OF US @ Time Warp 2016, Mannheim",
+      "url": "https://www.youtube.com/watch?v=akdDY6PCBBM"
     }
   ]
 }
