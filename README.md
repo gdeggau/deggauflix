@@ -1,68 +1,74 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  <br>
+  <img alt="deggauflix" src="https://github.com/gdeggau/deggauflix/blob/master/src/assets/img/Logo.png?raw=true" width="250px">
+</h1>
 
-## Available Scripts
+<h4 align="center">
+  Projeto inspirado na Netflix, com objetivo de listar e cadastrar vídeos preferidos no YouTube.
+  <br />
+  <br />
+  https://deggauflix.vercel.app/
+</h4>
 
-In the project directory, you can run:
+<p align="center">
+  <img alt="Linguagem mais usada JavaScript" src="https://img.shields.io/github/languages/top/gdeggau/deggauflix?style=flat">
+  <img alt="Objetivo: estudo" src="https://img.shields.io/badge/purpose-study-lightgrey?style=flat">
+</p>
 
-### `yarn start`
+<p align="center">
+  <a href="#recursos">Recursos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#créditos">Créditos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h3 align="center">
+  Versão Web
+</h3>
+<p align="center">
+  <img src="https://github.com/gdeggau/deggauflix/blob/master/src/assets/img/web1.PNG?raw=true" width=95%>
+  <img src="https://github.com/gdeggau/deggauflix/blob/master/src/assets/img/web2.PNG?raw=true" width=95%>
+</p>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<h3 align="center">
+  Versão Mobile
+</h3>
+<p align="center">
+  <img src="https://github.com/gdeggau/deggauflix/blob/master/src/assets/img/mobile.PNG?raw=true">
+</p>
 
-### `yarn test`
+## Recursos
+- Listagem de vídeos do youtube separados por categoria;
+- Redirecionar para o vídeo no youtube ao clicar;
+- Cadastro de novos vídeos e categorias.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instalação
 
-### `yarn build`
+Para clonar e executar a aplicação é necessário [Git](https://git-scm.com) e [Yarn](https://yarnpkg.com/) (ou [npm](http://npmjs.com)). Em sua linha de comando:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Clone o repositório
+$ git clone https://github.com/gdeggau/deggauflix.git
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Entre no repositório
+$ cd deggauflix
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Instale as dependências
+$ yarn
+# ou
+$ npm install
+```
+```bash
+# Rodar frontend e backend (json server)
+$ yarn dev
+# ou
+$ npm run dev
+```
+## Tecnologias:
+- [JavaScript](https://www.javascript.com/)
+- [ReactJS](https://pt-br.reactjs.org/)
+- [Styled-Components](https://styled-components.com/)
+- [JSON Server](https://github.com/typicode/json-server)
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Créditos:
+Aplicação construída durante a semana Imersão React, realizada pela [Alura](https://www.alura.com.br/).
